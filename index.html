@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Admissions Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎓 College Admissions Simulator</h1>
+    <p>Simulate admissions based on your academic profile</p>
+
+    <div class="card">
+        <h2>Your Stats</h2>
+
+        <label>GPA</label>
+        <input type="number" id="gpa" value="4.0" step="0.01">
+
+        <label>ACT Composite</label>
+        <input type="number" id="act" value="32">
+
+        <label>ACT Math</label>
+        <input type="number" id="math" value="28">
+
+        <label>Research Level</label>
+        <select id="research">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+        </select>
+
+        <label>Essay Strength</label>
+        <select id="essay">
+            <option value="average">Average</option>
+            <option value="strong" selected>Strong</option>
+            <option value="exceptional">Exceptional</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="french" checked>
+            Learning French
+        </label>
+
+        <button onclick="runSimulation()">Run Simulation</button>
+    </div>
+
+    <div class="results" id="results"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
